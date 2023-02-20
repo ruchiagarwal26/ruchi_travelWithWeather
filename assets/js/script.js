@@ -53,8 +53,8 @@ fetch(urlCity) //for getting lon and lat
             var dateDisplay = todayDate;
             console.log('starting date '+ dateDisplay); 
             document.getElementById("city").innerHTML = newName.value.toUpperCase();
-            for (i=0; i < 40; i=i+8){
-            //if (result < dateSixDays) {   
+            for (i=0; i < 42; i=i+8){
+            if (i==40){var i = 39};
             console.log("i = "+ i);    
             var result = dateDisplay.setDate(dateDisplay.getDate() + 1);
             var IncrementDayPartString = new Date(result).toString();
@@ -122,7 +122,7 @@ fetch(urlCity) //for getting lon and lat
 var saved_city = localStorage.getItem('City: ');
 var saved_date = localStorage.getItem('day');
 
-//to save search history
+//to save search history and display on the page
 
 function searchHistory(){
     const newName = document.getElementById("cityInput");
