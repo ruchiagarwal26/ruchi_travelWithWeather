@@ -1217,8 +1217,8 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    margin-left: -15px;
-    margin-right: -15px;
+    margin-left: 5px;
+    margin-right: 5px;
   }
   
   [class*='col-'] {
@@ -1890,5 +1890,15 @@
     .align-center-xl {
       align-items: center;
     }
+  }
+
+  #inputContainer{
+    padding-top: 20px;
+  }
+  .lowerRow {
+    padding: 5px;
+    margin:5px;
+    margin-left: 5px;
+    margin-right: 5px;
   }
   
