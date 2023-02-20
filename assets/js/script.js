@@ -52,6 +52,7 @@ fetch(urlCity) //for getting lon and lat
             console.log("data : ", data);
             var dateDisplay = todayDate;
             console.log('starting date '+ dateDisplay); 
+            document.getElementById("city").innerHTML = newName.value.toUpperCase();
             for (i=0; i < 40; i=i+8){
             //if (result < dateSixDays) {   
             console.log("i = "+ i);    
@@ -69,10 +70,10 @@ fetch(urlCity) //for getting lon and lat
             console.log("todayDate.getDate() + 6 "+ todayDate.getDate() + 6);
            // if (IncrementDayPart = displayDateTime & IncrementDayPart < todayDate.getDate() + 6 ) {
             //i=0;
-            var windSpeed = data.list[i].wind.speed + " m/s";
+            var windSpeed = data.list[i].wind.speed + " MPH ";
             //273.15) × 9/5 + 32 -- kelvin to Fahrenheit conversion
             var temp = (Number(data.list[i].main.temp - 273.15) * 9/5 + 32 ).toFixed(1)+" °F";
-            var humidity = data.list[i].main.humidity;
+            var humidity = data.list[i].main.humidity + " %";
             var date = data.list[i].dt_txt;
             var weatherIcon = data.list[i].weather[0].icon;
             var img = document.createElement("img");
@@ -127,13 +128,13 @@ function searchHistory(){
     const newName = document.getElementById("cityInput");
     console.log("saved_city: "+ newName.value);
     const recentSearch = []
-    recentSearch.push(newName.value);
+    recentSearch.push(newName.value.toUpperCase());
     console.log("recentSearch: "+ recentSearch);
 
     for (j=0; j < recentSearch.length; j++){
 
-        const p = document.createElement("p");
-        p.innerHTML=recentSearch[j];
-        document.getElementById("history").append(p);
+        const div = document.createElement("div");
+        div.innerHTML=recentSearch[j];
+        document.getElementById("history").append(div);
     }
 }

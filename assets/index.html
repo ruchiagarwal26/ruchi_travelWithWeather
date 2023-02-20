@@ -19,14 +19,15 @@
       <div class="container">
       <div class="row row-cols-2 g-4">
       <div class="card card-rounded col-4 bg-white text-center">
-        <p id="inputContainer">City: <input type="text" id="cityInput"></p>
+        <p id="inputContainer"><h5>Search for a City:</h5><input type="text" id="cityInput"></p>
         <button id="search" onclick="getCityName(), searchHistory()"> Search </button>
         <div id="history">
-        <h5> city name </h5>
+        <h5> Saved City Searches </h5>
       </div>
       </div>
       <div class="card card-rounded col-lg-6 align-items-strech">
       <div class="weather col-md-8">
+          <h4 id = "city"> City </h4>
           <h5 class="card-title" id="day0"> Day 1</h5>
           <h5 class="card-title" id="date0"> Date 1</h5>
           <div class="image" id="img0"alt="image"></div>
@@ -40,7 +41,7 @@
       
       <div class="container">
       <div class="row lowerRow row-cols-4 g-2 align-items-strech">
-      <div class="weather col-md-3 view overlay">
+      <div class="weather card card-rounded col-md-3 view overlay">
         <h5 class="card-title" id="day8"> Day 2</h5>
           <h5 class="card-title" id="date8"> Date 2</h5>
           <div class="image" id="img8"alt="image"></div>
@@ -48,7 +49,7 @@
           <p class="humidity" id="day8humidity"> Loading ...</p>
           <p class="wind" id="day8wind"> Loading ...</p>
         </div>
-      <div class="weather col-md-3">
+      <div class="weather card card-rounded col-md-3">
           <h5 class="card-title" id="day16"> Day 3</h5>
           <h5 class="card-title" id="date16"> Date 3</h5>
           <div class="image" id="img16"alt="image"></div>
@@ -56,7 +57,7 @@
           <p class="humidity" id="day16humidity"> Loading ...</p>
           <p class="wind" id="day16wind"> Loading ...</p>
         </div>
-      <div class="weather col-md-3">
+      <div class="weather card card-rounded col-md-3">
           <h5 class="card-title" id="day24"> Day 4</h5>
           <h5 class="card-title" id="date24"> Date 4</h5>
           <div class="image" id="img24"alt="image"></div>
@@ -64,7 +65,7 @@
           <p class="humidity" id="day24humidity"> Loading ...</p>
           <p class="wind" id="day24wind"> Loading ...</p>
         </div>
-      <div class="weather col-md-3">
+      <div class="weather card card-rounded col-md-3">
           <h5 class="card-title" id="day32"> Day 5</h5>
           <h5 class="card-title" id="date32"> Date 5</h5>
           <div class="image" id="img32"alt="image"></div>

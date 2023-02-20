@@ -1892,6 +1892,15 @@
     }
   }
 
+  .weather{
+    font-size: large;
+    font-weight: bold;
+  }
+  
+  .image {
+    background-color:rgb(115, 105, 117)
+  }
+
   #inputContainer{
     padding-top: 20px;
   }
@@ -1900,5 +1909,23 @@
     margin:5px;
     margin-left: 5px;
     margin-right: 5px;
+    border: #1a1a1a;
+  }
+
+  #city {
+    background-color: rgb(115, 105, 117);
+    color:white;
   }
   
+  #history{
+    border: 1px solid grey;
+    padding-top: 2px;
+    margin-top: 5px;
+  }
+
+  #history div {
+    border:1px solid white;
+    margin:auto;
+    padding: 2px;
+    background-color: #31a9e1;
+  }
