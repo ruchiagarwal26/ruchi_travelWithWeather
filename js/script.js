@@ -141,7 +141,9 @@ function searchHistory() {
   const recentSearch = [];
   recentSearch.push(newName.value.toUpperCase());
  // console.log("recentSearch: " + recentSearch);
-
+  var dataExist = localStorage.getItem(newName.value);
+  console.log("dataExist : ", dataExist);
+  if (dataExist) {
   for (j = 0; j < recentSearch.length; j++) {
     const BUTTON = document.createElement("BUTTON");
     
@@ -155,4 +157,5 @@ function searchHistory() {
     BUTTON.innerHTML = recentSearch[j];
     document.getElementById("history").append(BUTTON);
   }
+}
 }
