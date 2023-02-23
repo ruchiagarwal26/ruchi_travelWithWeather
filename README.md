@@ -1,5 +1,30 @@
 # ruchi_travelWithWeather
 
+##Website Link : https://ruchiagarwal26.github.io/ruchi_travelWithWeather/index.html
+
+Screen Shot:
+![image](https://user-images.githubusercontent.com/115508901/220808516-114a2d28-3873-4107-9dd0-0aded91a20e0.png)
+
+
+Functionalities:
+
+a) This is a weather website, where in user can enter city name in the given serach tab
+
+b) Upon clicking serch
+      * an API call is made to retrieve Longitude and Latitude data
+      ** This information is passed to another API to retreive weather forecast
+      *** if the city name is a valid city, then display:
+      City Name, Date , Day , weather image and weather conditions (Temp, humidity and wind speed)
+            i) current day's weather
+            ii) forecast for next 5 days
+            iii) weather image from image API
+      
+c) The city that are entered by the user are saved under Saved city searches
+
+d) the user can click back on those cities and retrieve the weather data
+
+Hope you enjoy this weather app :) 
+
 # 06 Server-Side APIs: Weather Dashboard
 
 ## Your Task
