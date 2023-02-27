@@ -1,7 +1,6 @@
 let currentData = "";
 containerCity = document.getElementsByClassName("text-white");
 savedSearch = document.getElementsByClassName("historyCity");
-//localStorage.setItem
 
 const todayDate = new Date();
 const dateSixDays = todayDate.setDate(todayDate.getDate() + 6);
